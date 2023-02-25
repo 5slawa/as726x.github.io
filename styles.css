@@ -1,0 +1,332 @@
+#terminal div.gray {
+    color: black;
+}
+
+#terminal div.out {
+    color: #885354;
+}
+
+#terminal div.in {
+    color: #3c46cd;
+	font-weight: bold;
+}
+terminal, container { 
+    display: block;
+}
+body {
+    background-image: url(bg.png);
+    background-color: #F5F5F5;
+	
+   }
+#Frame1 {
+	z-index: 1;
+	position: absolute;
+	margin: 0;
+	top: 50%;
+	left: 50%;
+	margin-right: -50%;
+	transform: translate(-50%, -50%);
+	width: 1056px;
+	height: 602px;
+
+}
+
+#Frame2 {
+	position: absolute;
+	left: 12px;
+	right: 602px;
+	top: 12px;
+	bottom: 12px;
+	background: #FFFFFF;
+	box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.14), 0px 2px 2px rgba(0, 0, 0, 0.12), 0px 1px 3px rgba(0, 0, 0, 0.2);
+	border-radius: 4px;
+}
+
+#Frame3 {
+	position: absolute;
+	width: 440px;
+	height: 88px;
+	left: 0px;
+	top: 0px;
+	background: #FAFAFA;
+	border-radius: 4px 4px 0px 0px;
+	border: 1px solid #E0E0E0;
+}
+
+#Frame4 {
+	position: absolute;
+	left: 466px;
+	right: 12px;
+	top: 12px;
+	bottom: 12px;
+	background: #FFFFFF;
+	box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.14), 0px 2px 2px rgba(0, 0, 0, 0.12), 0px 1px 3px rgba(0, 0, 0, 0.2);
+	border-radius: 4px;
+}
+
+#Frame5 {
+	position: absolute;
+	width: 576px;
+	height: 88px;
+	left: 0px;
+	top: 0px;
+	background: #FAFAFA;
+	border-radius: 4px 4px 0px 0px;
+	border: 1px solid #E0E0E0;
+	font-family: Segoe UI;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 26px;
+	line-height: 85px;
+	text-indent : 20px; 
+	color: #212121;
+}
+
+#Frame6 {
+	position: absolute;
+	width: 578px;
+	height: 490px;
+	left: 0px;
+	top: 88px;
+}
+
+#connect {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	padding: 12px 16px;
+	position: absolute;
+	width: 157px;
+	height: 40px;
+	left: 24px;
+	top: 24px;
+	background: #2C98F0;
+	border: 1px solid rgba(0,0,0,0.01);
+	box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.14), 0px 2px 2px rgba(0, 0, 0, 0.12), 0px 1px 3px rgba(0, 0, 0, 0.2);
+	border-radius: 4px;
+	font-family: Segoe UI;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 16px;
+	display: flex;
+	align-items: center;
+	letter-spacing: 0.75px;
+	text-transform: uppercase;
+	color: #FFFFFF;
+}
+
+#test {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	padding: 12px 16px;
+	position: absolute;
+	width: 69px;
+	height: 40px;
+	left: 193px;
+	top: 24px;
+	background: #2C98F0;
+	border: 1px solid rgba(0,0,0,0.01);
+	box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.14), 0px 2px 2px rgba(0, 0, 0, 0.12), 0px 1px 3px rgba(0, 0, 0, 0.2);
+	border-radius: 4px;
+	font-family: Segoe UI;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 16px;
+	display: flex;
+	align-items: center;
+	letter-spacing: 0.75px;
+	text-transform: uppercase;
+	color: #FFFFFF;
+}
+
+#disconnect {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	padding: 12px 16px;
+	position: absolute;
+	width: 144px;
+	height: 40px;
+	left: 274px;
+	top: 24px;
+	background: #E06565;
+	border: 1px solid rgba(0,0,0,0.01);
+	box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.14), 0px 2px 2px rgba(0, 0, 0, 0.12), 0px 1px 3px rgba(0, 0, 0, 0.2);
+	border-radius: 4px;
+	font-family: Segoe UI;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 16px;
+	display: flex;
+	align-items: center;
+	letter-spacing: 0.75px;
+	text-transform: uppercase;
+	color: #FFFFFF;
+}
+
+#terminal {
+	z-index: 2;    
+	overflow: hidden;
+	background: white;
+	position: absolute;
+	width: 396px;
+	height: 430px;
+	left: 24px;
+	top: 118px;
+	font-family: Segoe UI;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 24px;
+}
+
+#container {
+	z-index: 2;
+	position: absolute;
+	width: 531px;
+	height: 370px;
+	left: calc(50% - 531px/2 + 0.5px);
+	top: calc(50% - 370px/2);
+	background: white
+}
+
+@media screen and (max-width: 980px) {
+#Frame1 {
+	z-index: 1;
+	position: absolute;
+	width: 100%;
+	height: 95%;
+}
+#Frame2 {
+	position: absolute;
+	width: 94%;
+	height: 45%;
+	top: 55%;
+	background: #FFFFFF;
+	box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.14), 0px 2px 2px rgba(0, 0, 0, 0.12), 0px 1px 3px rgba(0, 0, 0, 0.2);
+	border-radius: 4px;
+}
+
+#Frame3 {
+	position: absolute;
+	width: 99.5%;
+	height: 25%;
+	top: 75%;
+	background: #FAFAFA;
+	border-radius: 0px 0px 4px 4px ;
+	border: 1px solid #E0E0E0;
+}
+
+#Frame4 {
+	position: absolute;
+	width: 94%;
+	height: 53%;
+	top: 0%;
+	left: 3%;
+	background: #FFFFFF;
+	box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.14), 0px 2px 2px rgba(0, 0, 0, 0.12), 0px 1px 3px rgba(0, 0, 0, 0.2);
+	border-radius: 4px;
+}
+
+#Frame5 {
+	position: absolute;
+	width: 99.5%;
+	height: 15%;
+	top: 0%;
+	background: #FAFAFA;
+	border-radius: 4px 4px 0px 0px;
+	border: 1px solid #E0E0E0;
+	font-family: Segoe UI;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 300%;
+	text-indent : 5%; 
+	color: #212121;
+}
+
+#Frame6 {
+	position: absolute;
+	width: 100%;
+	height: 80%;
+	top: 18%;
+}
+
+#terminal {
+	padding:5%;
+    position: absolute; 
+    top: 0%; 
+	left: 1%;
+    width: 88%; 
+    background: white;
+	height: 60%;
+	overflow: hidden;
+}
+   
+#container {
+   position:absolute;
+   margin:auto;
+   clear:both;
+   width:98%;
+   left: 1%;
+   top: 3%;
+   height: 90%;
+}
+#connect {
+	position: absolute;
+	width: 40%;
+	height: 70%;
+	left: 55%;
+	top: 15%;
+	font-size: 14px;
+	padding: 5% 3.5%;
+	
+}
+#test {
+	position:absolute;
+	top: 15%;
+    left: 30%;
+	width: 21%;
+	height: 70%;
+	font-size: 14px;
+	padding: 5% 5.5%;
+}
+#disconnect{
+	visibility: hidden;
+	position: relative;	
+	top: 8%;
+	left: 0%;
+	height: 39.49%;
+	width: 18.75%;
+}
+
+#disconnect:after {
+	visibility: visible;
+	content: 'ОТКЛ';
+	position:absolute;
+	top: 15%;
+	height: 100%;
+	display: flex;	
+	flex-direction: row;
+	align-items: center;
+	padding: 17% 28.1%;
+	background: #E06565;
+	border: 1px solid rgba(0,0,0,0.01);
+	box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.14), 0px 2px 2px rgba(0, 0, 0, 0.12), 0px 1px 3px rgba(0, 0, 0, 0.2);
+	border-radius: 4px;
+	font-family: Segoe UI;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 16px;
+	display: flex;
+	align-items: center;
+	letter-spacing: 0.75px;
+	text-transform: uppercase;
+	color: #FFFFFF;
+}
+}

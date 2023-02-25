@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="styles.css" rel="stylesheet" >
+	
+	<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+	<link rel="manifest" href="site.webmanifest">
+	<link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5">
+	<meta name="msapplication-TileColor" content="#da532c">
+	<meta name="theme-color" content="#000000">
+</head>
+<body>
+
+<div id="Frame1">
+<div id="Frame2"><div id="terminal"></div>
+<div id="Frame3"><button id="connect" type="button">ПОДКЛЮЧИТЬСЯ</button>
+<button id="test" type="button">ТЕСТ</button>
+<button id="disconnect" type="button">ОТКЛЮЧИТЬСЯ</button></div>
+</div>
+
+<div id="Frame4"><div id="Frame6">
+<div id="container"> <canvas id="myChart" width="10" height="7"></canvas></div></div>
+<div id="Frame5">Результаты теста</div>
+</div>
+
+</div>
+<script src="chart.js"></script>
+<script src="main.js"></script>
+<script src="companion.js" data-service-worker="sw.js"></script>
+
+</body>
+</html>
